@@ -1,1 +1,588 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서비스이름 - AI Agency Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <div
+              class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center"
+            >
+              <div class="w-4 h-4 bg-white rounded-full"></div>
+            </div>
+            <span class="ml-2 text-xl font-bold text-gray-900">서비스이름</span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#process"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Process</a
+            >
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Services</a
+            >
+            <a
+              href="#benefits"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Benefits</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="#pricing"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Plans</a
+            >
+            <a
+              href="#faq"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >FAQ</a
+            >
+            <button
+              class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all btn-primary"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden relative">
+            <button
+              id="mobile-menu-toggle"
+              class="text-gray-700 hover:text-blue-600"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden">
+              <div class="py-2">
+                <a
+                  href="#process"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Process</a
+                >
+                <a
+                  href="#services"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Services</a
+                >
+                <a
+                  href="#benefits"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Benefits</a
+                >
+                <a
+                  href="#about"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >About</a
+                >
+                <a
+                  href="#pricing"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >Plans</a
+                >
+                <a
+                  href="#faq"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >FAQ</a
+                >
+                <a href="#" class="block px-4 py-2 text-blue-600 font-semibold"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <p class="text-sm text-gray-500 mb-4">OZ Coding School</p>
+          <h1 class="hero-title text-gray-900">
+            우리아이템입니다 with<br />
+            <span class="text-gradient">AI-Driven Automation</span>
+          </h1>
+          <p class="hero-subtitle max-w-2xl mx-auto">
+            서비스의 설명과 밸류에 대해 작성이 필요해요
+          </p>
+          <button
+            class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all btn-primary mb-8"
+          >
+            See plans
+          </button>
+
+          <!-- Customer testimonials -->
+          <div class="flex items-center justify-center space-x-4">
+            <div class="avatar-group">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                alt="Customer"
+                class="avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1494790108755-2616b612b522?w=100&h=100&fit=crop&crop=face"
+                alt="Customer"
+                class="avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                alt="Customer"
+                class="avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                alt="Customer"
+                class="avatar"
+              />
+            </div>
+            <div class="text-left">
+              <div class="star-rating">★★★★★</div>
+              <p class="text-sm text-gray-600">Loved by 5000+ clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            우리서비스의 특장점입니다
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="process-step text-center hover-lift">
+            <div class="process-number mb-4">01</div>
+            <h3 class="text-xl font-semibold mb-4">특장점1입니다</h3>
+            <p class="text-gray-600">
+              We delve deep into your business processes to identify areas ready
+              for automation. We engage with your team, analyze workflows, and
+              pinpoint where AI can make a big impact.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step text-center hover-lift">
+            <div class="process-number mb-4">02</div>
+            <h3 class="text-xl font-semibold mb-4">특장점2입니다</h3>
+            <p class="text-gray-600">
+              Our expert team designs and builds tailored AI solutions that fit
+              seamlessly into your existing infrastructure, ensuring maximum
+              efficiency and minimal disruption.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step text-center hover-lift">
+            <div class="process-number mb-4">03</div>
+            <h3 class="text-xl font-semibold mb-4">특장점2입니다</h3>
+            <p class="text-gray-600">
+              We handle the complete deployment of your AI systems and provide
+              ongoing support to ensure optimal performance and continuous
+              improvement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Next-Gen AI Solutions
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Experience the AI Advantage
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Increased Efficiency</h3>
+            <p class="text-gray-600">
+              We streamline processes with AI automation, reducing manual effort
+              and saving time.
+            </p>
+          </div>
+
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Cost Reduction</h3>
+            <p class="text-gray-600">
+              By automating tasks, we lower operational costs and reallocate
+              resources effectively.
+            </p>
+          </div>
+
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Enhanced Experience</h3>
+            <p class="text-gray-600">
+              We deliver personalized experiences, enhancing customer
+              satisfaction.
+            </p>
+          </div>
+
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Scalable Operations</h3>
+            <p class="text-gray-600">
+              Our AI Automation solutions allows us to scale operations easily
+              to meet growing demands.
+            </p>
+          </div>
+
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Data-Driven Insights</h3>
+            <p class="text-gray-600">
+              We analyze data swiftly, providing actionable insights for faster
+              decision-making.
+            </p>
+          </div>
+
+          <div class="service-card p-6 rounded-xl hover-lift">
+            <h3 class="text-xl font-semibold mb-4">Adaptive Solutions</h3>
+            <p class="text-gray-600">
+              We adapt to changing circumstances, ensuring our solutions remain
+              effective.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Who We Are</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            We are a team of AI experts and business strategists dedicated to
+            transforming how companies operate through intelligent automation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Flexible Pricing, Maximum Impact
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Choose a plan that fits your business needs and budget, with
+            scalable solutions that grow with you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
+        </div>
+
+        <div class="testimonial-container">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide text-center">
+            <img
+              src="https://framerusercontent.com/images/iABb6ejla3A5ZzE4zgxiPqBaYHI.jpg"
+              alt="James Martinez"
+              class="testimonial"
+            />
+            <blockquote class="text-xl text-gray-700 mb-4">
+              "Our sales conversion rates increased significantly thanks to
+              서비스이름's AI-driven lead scoring system."
+            </blockquote>
+            <div class="font-semibold">James Martinez</div>
+            <div class="text-gray-500">Head of Sales, MarketPro LLC</div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide text-center">
+            <img
+              src="https://framerusercontent.com/images/oUkBi1c8nERocfQrJWNLxZ9Fipw.jpg"
+              alt="Sarah Thompson"
+              class="testimonial"
+            />
+            <blockquote class="text-xl text-gray-700 mb-4">
+              "서비스이름's AI chatbot drastically cut our response times and
+              boosted customer satisfaction."
+            </blockquote>
+            <div class="font-semibold">Sarah Thompson</div>
+            <div class="text-gray-500">COO, Tech Solutions Inc.</div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide text-center">
+            <img
+              src="https://framerusercontent.com/images/5P0eN6qtSxQg8Lrk6rw2GR9e7eI.jpg"
+              alt="Emily Richards"
+              class="testimonial"
+            />
+            <blockquote class="text-xl text-gray-700 mb-4">
+              "서비스이름 streamlined our invoicing process, saving us time and
+              reducing errors effectively."
+            </blockquote>
+            <div class="font-semibold">Emily Richards</div>
+            <div class="text-gray-500">CFO, FinancePro Inc.</div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide text-center">
+            <img
+              src="https://framerusercontent.com/images/LsJGvkbYbF1y4ifkFrjeNfRfzYM.jpg"
+              alt="Michael Johnson"
+              class="testimonial"
+            />
+            <blockquote class="text-xl text-gray-700 mb-4">
+              "Their personalized cold outreach system greatly improved our
+              email response rates."
+            </blockquote>
+            <div class="font-semibold">Michael Johnson</div>
+            <div class="text-gray-500">CEO, InnovateTech Corp</div>
+          </div>
+
+          <!-- Carousel dots -->
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Your Questions, Answered
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is AI-driven automation?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                AI-driven automation uses artificial intelligence to perform
+                tasks that typically require human intelligence, such as
+                decision-making, pattern recognition, and natural language
+                processing, to streamline and optimize business processes.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does implementation take?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Implementation timelines vary depending on the complexity and
+                scope of your project. Typically, our solutions can be deployed
+                within 2-8 weeks, including testing and training phases.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you provide ongoing support?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we provide comprehensive ongoing support including system
+                monitoring, updates, troubleshooting, and continuous
+                optimization to ensure your AI solutions perform at their best.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What industries do you serve?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We serve a wide range of industries including healthcare,
+                finance, retail, manufacturing, technology, and professional
+                services. Our solutions are customizable to meet specific
+                industry requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <div
+                class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center"
+              >
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+              </div>
+              <span class="ml-2 text-xl font-bold">서비스이름</span>
+            </div>
+            <p class="text-gray-400">
+              Transforming businesses with AI-driven automation solutions.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >AI Automation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Process Optimization</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Custom AI Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Consulting</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Company</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4">Support</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 서비스이름. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Load main JavaScript module -->
+    <script type="module" src="main.js"></script>
+    <script type="module" src="animations.js"></script>
+    <script type="module" src="navigation.js"></script>
+    <script type="module" src="faq-accordion.js"></script>
+    <script type="module" src="testimonial-carousel.js"></script>
+  </body>
+</html>
